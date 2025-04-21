@@ -1,0 +1,371 @@
+/* 1 h2 испоользовался хз скок раз*/
+
+h2 {
+  color: rgba(145, 32, 32, 0.178);
+  text-align: center;
+}
+
+  /* 1 body испоользовался 1 раз*/
+body {
+  
+  /* background-image: url(https://i.pinimg.com/originals/4f/df/c1/4fdfc15e4339422e434b294f3382de0a.png); */
+  /* изображения */
+  /* background-position: center center; */
+    /*  изображение всегда смотрит за сторанами */
+  background-repeat: no-repeat;
+   /*  изображение не повторяется */
+   background-attachment: fixed;
+   /*  изображение зафиксировано в окне , поэтому оно не смещается */
+  background-size: cover;
+     /* подгоняет фон так что бы он был растянут на весь экран  */
+  background-color: #282828;
+   /* Устанавливает фоновый цвет, который будет отображаться, пока загружается фоновое изображение */
+}
+
+
+ /* 1 span испоользовался 1 раз*/
+.span{
+    font-style: italic;
+    background-color: rgba(211, 199, 29, 0.842);
+    color: rgb(134, 33, 173);
+ }
+
+ /* (используется для всх span) */
+         /* 1 gnom испоользовался 1 раз возможно щяс 0*/
+ .gnom{
+    font-style: italic;
+    background-color: rgba(211, 199, 29, 0.842);
+    color: rgb(134, 33, 173);
+ }
+
+ /* ol{
+    list-style: lower-latin;
+ } */
+
+          /* 1 fol испоользовался 0 раз*/
+ .fol{
+    list-style: inside;
+ }
+
+         /* 1 othez испоользовался 0 раз*/
+ .othez{
+   font-size: large;
+   background-color: yellowgreen;
+   margin: 20px; 
+   /* margin:-это на ружу */
+   padding : 20px;
+   /* padding: -это внутри */
+ } 
+
+          /* 2 logo1 испоользовался 2 раз*/
+ .logo1{
+    color: goldenrod;
+}
+.logo2{
+  color: greenyellow;
+}
+
+             /* 1  RGB  испоользовался 5 раз*/
+ .RGB1 {
+      background: linear-gradient(to right,  rgb(110, 3, 153),  rgb(24, 205, 236), rgb(115, 255, 0), blue );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      line-height: 40px;
+    }
+    
+    /* :hover {
+      background-position: 100% 50%; /* Конечная позиция фона при наведении } */
+
+ .RGB2 {
+      background: linear-gradient(to right, rgb(19, 205, 238), gold  , rgb(19, 209, 243));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+ .RGB3 {
+      background: linear-gradient(to right, rgb(255, 238, 0), rgb(30, 255, 0), violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      line-height: 40px;
+    }
+    /* .cc{
+      background-image: url(scool.gif);
+      background-repeat: no-repeat;
+      background-position: 50px 176px;
+    } */
+
+    
+    /* h2{
+      font-style: italic;
+    background-color: rgba(211, 199, 29, 0.842);
+    color: rgb(134, 33, 173);} */
+ .RGB4 {
+      background: linear-gradient(to right, rgb(30, 255, 0) , gold  , violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      line-height: 40px;
+      
+    }
+
+    .RGB5 {
+      background: linear-gradient(to right, rgb(60, 255, 0)  ,rgb(255, 196, 0)  , rgba(180, 977, 01, 9.61) , rgb(255, 74, 11), gold );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    .RGB6 {
+      background: linear-gradient(to right, rgb(14, 202, 193), rgb(188, 199, 33));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+    .RGB7 {
+      background: linear-gradient(to right, rgb(175, 177, 177), rgb(200, 255, 0) ,  rgba(19, 160, 179, 0.87)) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+    .RGB8 {
+      background: linear-gradient(to right, rgba(124, 126, 126, 0.637), rgb(225, 226, 222) ,  rgba(134, 134, 134, 0.87)) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+    .RGB9 {
+      background: linear-gradient(to right, rgba(230, 27, 13, 0.637), rgb(225, 226, 222) , rgba(230, 27, 13, 0.637)) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+    .RGB10 {
+      background: linear-gradient(to right, rgb(162, 245, 245), rgb(200, 255, 0) ,  rgba(19, 160, 179, 0.87)) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+    .RGB11 {
+      background: linear-gradient(to right, rgb(169, 255, 255), rgb(0, 255, 128) ,  rgba(0, 225, 255, 0.87)) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+
+    .RGB12 {
+      background: linear-gradient(to right, rgb(255, 169, 169), rgb(253, 185, 255) ,  rgba(255, 130, 130, 0.87)) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+    .RGB13 {
+      background: linear-gradient(to right, rgb(255, 123, 0),rgb(255, 51, 0)  ) ;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+    
+    .RGB0 {
+      background: linear-gradient(to right,  rgb(19, 18, 18),rgb(0, 0, 0));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+    .RGB01 {
+      background: linear-gradient(to right,  rgb(231, 229, 227),rgb(255, 255, 255));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 23px;
+      line-height: 23px;
+    }
+
+
+
+                     /* 1  element и иные названия  испоользовался 4-6 раз*/
+
+    .element {
+      transition: box-shadow 0.73s ease;  /* Плавное появление свечения */
+      transition: text-shadow  0.75s ease; 
+    }
+
+    .element:hover {
+      box-shadow: 0 0 70px #adf700;  /*  свечение, радиус px */
+      text-shadow : 0 0 32px  rgb(97, 243, 0); 
+    }
+    
+    .elem {
+      transition: box-shadow 0.74s ease;  /* Плавное появление свечения */
+      transition: text-shadow  0.75s ease; 
+    }
+    
+    .elem:hover {
+      box-shadow: 0 0 80px #f38304;  /*  свечение, радиус px */
+      text-shadow : 0 0 32px  rgb(243, 239, 0); 
+    }
+
+    
+    .el {
+      transition: box-shadow 0.44s ease;  /* Плавное появление свечения */
+      transition: text-shadow  0.75s ease; 
+    }
+
+    .el:hover {
+      box-shadow: 0 0 70px #d80869;  /*  свечение, радиус px */
+      text-shadow : 0 0 32px  rgb(17, 231, 149); 
+    }
+    
+    .elt {
+      transition: box-shadow 0.73s ease;  /* Плавное появление свечения */
+      transition: text-shadow  0.75s ease; 
+    }
+ 
+    .elt:hover {
+      box-shadow: 0 0 80px #caf700;  /*  свечение, радиус px */
+      text-shadow : 0 0 32px #caf700;
+    }
+
+   .logi {
+      transition: box-shadow 0.75s ease;  /* Плавное появление свечения */
+      transition: text-shadow  0.75s ease; 
+    }
+ 
+    .logi:hover {
+      box-shadow: 0 0 90px rgba(0, 255, 136, 0.795);  /*  свечение, радиус px */
+      text-shadow : 0 0 70px  rgb(0, 194, 243); 
+    }
+    
+    .lo {
+      transition: box-shadow 0.73s ease;  /* Плавное появление свечения */
+      transition: text-shadow  0.75s ease; 
+    }
+ 
+    .lo:hover {
+      box-shadow: 0 0 50px #f1dede;  /*  свечение, радиус px */
+      text-shadow : 0 0 32px #a8b473;
+    }
+    .londom {
+      transition: box-shadow 0.73s ease;  /* Плавное появление свечения */
+      transition: text-shadow  0.75s ease; 
+    }
+ 
+    .londom:hover {
+      box-shadow: 0 0 50px #41282c;  /*  свечение, радиус px */
+      text-shadow : 0 0 32px #59325a;
+    }
+    
+    
+             /* 1  element и иные названия  испоользовался 1 раз*/
+    .cicret {
+      background: linear-gradient(to right, pink  , rgba(21, 132, 146, 0.87)  , rgb(255, 191, 0)yellow , #F3E5C6, rgb(255, 94, 0), gold  , violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      line-height: 40px;
+      text-decoration: none;
+       /* Убирает у ___ 'a' ну  нижнее подчеркивание у ссылк */
+    }
+
+
+.wrapper p {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 7px 7px 10px #00c3ff79;
+}
+
+
+
+/* .container {
+  margin-top: 200px; 
+} */
+/* Отступ сверху для контейнера */
+
+/* h1 {
+  background: linear-gradient(45deg, rgba(89, 5, 122, 0.959), rgba(135, 206, 235, 1)); /* Градиент от фиолетового к голубому 
+  -webkit-background-clip: text; /* Обрезка фона по тексту 
+  -webkit-text-fill-color: transparent; /* Прозрачный цвет текста 
+  font-size: 48px; /* Размер шрифта заголовка (большой шрифт) 
+  margin-bottom: 20px; /* Отступ снизу для заголовка 
+  transition: background 0.5s, -webkit-background-position 0.5s; /* Плавный переход для фона 
+  background-size: 200% 200%; /* Увеличиваем размер фона для анимации background-position: 0% 50%; /* Начальная позиция фона } */
+
+
+/* 1  bigbols и иные названия  испоользовался 2 раз*/
+
+  .bigbols{
+    color: #caf700;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+   /* 1  bscroll-left и  и content иные названия  испоользовался 2 раз */
+
+   /* .scroll-top {
+    overflow-x: auto;
+    transform: rotate(180deg);
+    height: 150px;
+    width: 300px;
+    border: 1px solid #000;
+}
+.content {
+    transform: rotate(180deg);
+} */
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+background-color: #9cbb12;
+color: #779c11;
+}
+
+    /* градиент фон  */
+/* 
+.graind{
+  background: radial-gradient(ellipse at bottom ltft, 
+  rgba(121,0,223,32)10%,
+  rgba(161,10,123,32) 40%),
+  linear-gradient(to bottom, rgba(83,224,123,32)),
+  rgba(0,110,223,32),
+  linear-gradient (135deg, chocolate, goldenrod);
+} */
+
+.tablediv { display: inline-block; width: 325px; overflow: hidden }
+
+
+.maubi{
+  /* position: fixed;  */
+  /* прилипает к экрану */
+  margin-top: 1px; 
+  /* поднимает и опускает  */
+  width: 1915px;
+  /* размер в лево и прав */
+  height: 90px;
+    /* размер в низ верх */
+  border: 3pt ridge rgba(112, 220, 50, 0.212);
+  /* абводка */
+  background-color: rgba(3, 3, 3, 0);
+  /* задний фон */
+  font-size: 30px;
+  /* размер шрифта */
+}
+
