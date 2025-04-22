@@ -99,7 +99,7 @@ a {
   color: #4a4a4a;
   margin-top: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  /* -webkit-line-clamp: 3; */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
