@@ -13,21 +13,21 @@ const createPost = (postData) => {
   const { title, link, image, categories } = postData;
   const post = document.createElement("div");
   post.className = "post";
-   post.innerHTML = `
-       <a class="post-preview" href="${link}" target="_blank">
-         <img class="post-image" src="${image}">
-       </a>
-       <div class="post-content">
-         <p class="post-title">${title}</p>
-         <div class="post-tags">
-           ${categories
-             .map((category) => `<span class="post-tag">${category}</span>`)
-             .join("")}
-         </div>
-       </div>
-   `;
-   
-
+  post.innerHTML = `
+      <a class="post-preview" href="${link}" target="_blank">
+        <img class="post-image" src="${image}">
+      </a>
+      <div class="post-content">
+        <p class="post-title">${title}</p>
+        <div class="post-tags">
+          ${categories
+            .map((category) => {
+              return '<span class="post-tag">' + category + "</span>";
+            })
+            .join("")}
+        </div>
+      </div>
+  `;
 
   postsContainer.append(post);
 };
@@ -72,8 +72,11 @@ const debounce = (callback, time) => {
   debounceTimer = window.setTimeout(callback, time);
 };
 
-search.addEventListener("input", (event) => {
-  const query = event.target.value;
-  debounce(() => handleSearchPosts(query), 500);
-});
-
+search.addEventListener(
+  "input",
+  (event) => {
+    const query = event.target.value;
+    debounce(() => handleSearchPosts(query), 500);
+  },
+  false
+);
