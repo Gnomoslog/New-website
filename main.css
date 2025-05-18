@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+}
+@font-face {
+	font-family: kamerik-3d;
+	src: url(../fonts/kamerik205-heavy.woff2);
+	font-weight: 900;
+}
+@font-face {
+	font-family: merriweather-italic-3d;
+	src: url(../fonts/merriweather-regular-italic.woff2);
+}
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: kamerik-3d;
+}
+.logo {
+	--logo-size: calc(var(--index) * 7.8);
+	width: var(--logo-size);
+	height: var(--logo-size);
+	background-repeat: no-repeat;
+	position: absolute;
+	left: calc(51% - calc(var(--logo-size) / 2));
+	top: calc(var(--index) * 2.8);
+	z-index: 1;
+}
+.layers {
+	/* perspective: 1000px; */
+	overflow: hidden;
+}
+.layers__container {
+	/* height: 100vh; */
+	/* min-height: 500px; */
+	transform-style: preserve-3d;
+	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+	will-change: transform;
+	transition: transform var(--transition);
+}
+.layers__item {
+	position: absolute;
+	inset: -5vw;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.layer-1 {
+	transform: translateZ(-55px) scale(1.06);
+}
+.layer-2 {
+	transform: translateZ(80px) scale(.88);
+}
+.layer-3 {
+	transform: translateZ(180px) scale(.8);
+}
+.layer-4 {
+	transform: translateZ(190px) scale(.9);
+}
+.layer-5 {
+	transform: translateZ(300px) scale(.9);
+}
+.layer-6 {
+	transform: translateZ(380px);
+}
+.hero-content {
+	font-size: calc(var(--index) * 2.9);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: calc(var(--index) * -.15);
+	line-height: 1.35em;
+	margin-top: calc(var(--index) * 5.5);
+}
+.hero-content span {
+	display: block;
+}
+.hero-content__p {
+	text-transform: none;
+	font-family: merriweather-italic-3d;
+	letter-spacing: normal;
+	font-size: calc(var(--index) * .73);
+	line-height: 3;
+}
+.button-start {
+	font-family: Arial;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .71);
+	letter-spacing: -.02vw;
+	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+	background-color: transparent;
+	color: #fff;
+	border-radius: 10em;
+	border: rgb(255 255 255 / .4) 3px solid;
+	outline: none;
+	cursor: pointer;
+	margin-top: calc(var(--index) * 2.5);
+}
+.layer-4, .layer-5, .layer-6 {
+	pointer-events: none;
+}
+
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Отступы между кнопками */
+}
+/* button:hover {
+    background: linear-gradient(to right, gold  , violet);
+    background-color: #008048;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 20px;
+      line-height: 30px;
+    background-position: 100% 50%; 
+} */
+    /* :hover {
+     /* Конечная позиция фона при наведении } */
+
+.button {
+    padding: 20px 40px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Уникальные стили для каждой кнопки */
+.button-0 { background-color: #FF5733; }
+.button-1 { background-color: #581845; }
+.button-2 { background-color: #3357FF; }
+.button-3 { background-color: #FF33A8; }
+.button-4 { background-color: #000000; }
+.button-5 { background-color: #A833FF; }
+.button-6 { background-color: #FFC300; }
+.button-7 { background-color: #314b00; }
+.button-8 { background-color: #C70039; }
+.button-9 { background-color: #900C3F; }
+.button-10 { background-color: #c7309a; }
+.button-11 { background-color: #c92500; }
+.button-12 { background-color: #63881e; }
+.button-13 { background-color: #051768; }
+.button-14 { background-color: #FF33A8; }
+.button-15 { background-color: #008048; }
+.button-16 { background-color: #2f728d; }
+.button-17 { background-color: #ffc400; }
+.button-18 { background-color: #a6ff00; }
+.button-19 { background-color: #C70039; }
+.button-20 { background-color: #900C3F; }
+.button-21 { background-color: #581845; }
+.button-22 { background-color: #FF5733; }
+.button-23 { background-color: #00ff2f; }
+.button-24 { background-color: #3357FF; }
+.button-25 { background-color: #ff89cc; }
+.button-26 { background-color: #00ff91; }
+.button-27 { background-color: #A833FF; }
+
+
