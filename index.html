@@ -12,6 +12,29 @@
   <script src="rain.js" defer></script>
   <script src="fga.js" defer></script>
 </head>
+<style>
+  
+/* Мобильные стили */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .post {
+        margin: 10px 0;
+    }
+
+    .post-image {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
 <body>
    <canvas class="rain"></canvas>
   <header>
@@ -32,8 +55,8 @@
           <option value="CSS и HTML"></option>
           <option value="JavaScript"></option>
           <option value="html"></option>
-          <option value="Леша"></option>
-          <option value=" Любовь"></option>
+          <!-- <option value="Леша"></option>
+          <option value=" Любовь"></option> -->
           <option value=" Катенок"></option>
           <option value="HTML "></option>
           <option value=" Програмист"></option>
@@ -53,20 +76,21 @@
       <div class="posts-container">
         <div class="post">
           <a class="post-preview" href="regest.html" target="_blank">
-            <img class="post-image22" src="wh (1) (1).jpeg">
+            <img class="post-image22" src="wh (1) (1).jpeg" alt="Регистрация">
           </a>
-          <div class="post-content">Регистрация</div>
-          <p class="post-title">
-          <div class="post-tags">
-            <span class="post-tag">Регистрация</span><span class="post-tag">Оформление</span>
+          <div class="post-content">
+            <p class="post-title">Регистрация</p>
+            <div class="post-tags">
+              <span class="post-tag">Регистрация</span><span class="post-tag">Оформление</span>
+            </div>
           </div>
         </div>
         <div class="post">
           <a class="post-preview" href="dom.html" target="_blank">
-            <img class="post-image223" src="cover.jpg">
+            <img class="post-image223" src="cover.jpg" alt="Расписание уроков">
           </a>
           <div class="post-content">
-            <p class="post-title">Расписанием уроков</p>
+            <p class="post-title">Расписание уроков</p>
             <div class="post-tags">
               <span class="post-tag">Расписание</span><span class="post-tag">Расписанием уроков</span>
             </div>
@@ -74,7 +98,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="dzzzzz.html" target="_blank">
-            <img class="post-image223" src="slide-15.jpg">
+            <img class="post-image223" src="slide-15.jpg" alt="Оформление текстa">
           </a>
           <div class="post-content">
             <p class="post-title">Оформление текстa</p>
@@ -85,7 +109,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="dz.11.html" target="_blank">
-            <img class="post-image224" src="i.webp">
+            <img class="post-image224" src="i.webp" alt="Использование Gif">
           </a>
           <div class="post-content">
             <p class="post-title">Использование Gif в HTML-документах</p>
@@ -96,7 +120,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="music.html" target="_blank">
-            <img class="post-image223" src="music0.jpg">
+            <img class="post-image223" src="music0.jpg" alt="Музыка">
           </a>
           <div class="post-content">
             <p class="post-title">♪ Музыкальное отделении «Домашней академии». ♫</p>
@@ -107,7 +131,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="perdsq1.html" target="_blank">
-            <img class="post-image224" src="c.png">
+            <img class="post-image224" src="c.png" alt="Гиперсылки">
           </a>
           <div class="post-content">
             <p class="post-title">Задание с Гиперсылками</p>
@@ -118,7 +142,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="forma.html" target="_blank">
-            <img class="post-image" src="htmllogo.png">
+            <img class="post-image" src="htmllogo.png" alt="Форматы">
           </a>
           <div class="post-content">
             <p class="post-title">Форматы</p>
@@ -129,7 +153,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="layers.html" target="_blank">
-            <img class="post-image224" src="i (1).webp">
+            <img class="post-image224" src="i (1).webp" alt="💸Слаи💸">
           </a>
           <div class="post-content">
             <p class="post-title">💸Слаи💸</p>
@@ -140,54 +164,22 @@
         </div>
         <div class="post">
           <a class="post-preview" href="https://dzen.ru/video/watch/63fd25f442bde33eeb63571a?share_to=link" target="_blank">
-            <img class="post-image" src="рыц.png">
+            <img class="post-image" src="рыц.png" alt="Ты рыцаря">
           </a>
           <div class="post-content">
-            <p class="post-title"> Ты рыцаря</p>
+            <p class="post-title">Ты рыцаря</p>
             <div class="post-tags">
               <span class="post-tag">симпапуська</span><span class="post-tag">JavaScript</span>
             </div>
           </div>
         </div>
-        <!-- <div class="post">
-          <a class="post-preview" href="index33.html" target="_blank">
-            <img class="post-image" src="121.jpg">
-          </a>
-          <div class="post-content">Маленький кибер спортсмен</div>
-          <p class="post-title">
-          <div class="post-tags">
-            <span class="post-tag">Любовь</span><span class="post-tag">Леша</span>
-          </div>
-        </div>
-        <div class="post">
-          <a class="post-preview" href="https://t.me/Gnomoslog" target="_blank">
-            <img class="post-image" src="Nazzu.jpg">
-          </a>
-          <div class="post-content">
-            <p class="post-title"> Я </p>
-            <div class="post-tags">
-              <span class="post-tag">Програмист</span><span class="post-tag">GnomosloG</span>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <a class="post-preview" href="https://t.me/nightwintersky" target="_blank">
-            <img class="post-image" src="Katya.jpg">
-</a>
-          <div class="post-content">
-            <p class="post-title">Кто же этот трудоголик?</p>
-            <div class="post-tags">
-              <span class="post-tag">Любовь</span><span class="post-tag">Катенок</span>
-            </div>
-          </div>
-        </div> -->
         <div align="center">
           <div class="post">
           <a class="post-preview" href="https://t.me/Gnomoslog" target="_blank">
-            <img class="post-image" src="Nazzu.jpg">
+            <img class="post-image" src="Nazzu.jpg" alt="Я">
           </a>
           <div class="post-content">
-            <p class="post-title"> Я </p>
+            <p class="post-title">Я</p>
             <div class="post-tags">
               <span class="post-tag">Програмист</span><span class="post-tag">GnomosloG</span>
             </div>
@@ -199,7 +191,6 @@
     </div>
   </main>
   <script src="poi.js"></script>
-  <script src="fga.js"></script>
-  <script src="search.js" defer></script> <!-- Добавляем новый скрипт -->
+  <script src="search.js" defer></script>
 </body>
 </html>
