@@ -22,11 +22,11 @@ canvas.rain {
         } */
 
   /* Основные стили для закругленного поиска и результатов */
-  .search-display {
+  /* .search-display {
       border-radius: 8px;
       overflow: hidden;
       max-height: 120px;
-      display: none; /* Скрыто по умолчанию */
+      display: none; 
       position: absolute;
       background-color: white;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -41,4 +41,4 @@ canvas.rain {
 
     .search-result:hover {
       background-color: #f0f0f0;
-    }
+    } */
