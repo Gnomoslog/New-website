@@ -6,42 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="poi.css">
-  <link rel="stylesheet" href="static/styils/redactor.css">
+  <!-- <link rel="stylesheet" href="static/styils/redactor.css"> -->
   <link rel="icon" href="favi(2).ico" type="image/x-icon">
   <link rel="stylesheet" href="mas.css">
   <script src="rain.js" defer></script>
   <script src="fga.js" defer></script>
+   <script src="js.js" defer></script>
+   <link rel="stylesheet" href="sab.css">
 </head>
 <style>
+  /* Мобильные стили */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
   
-/* Мобильные стили */
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
     .header-content {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-
-    .search-bar {
-        width: 90%;
-    }
-
-    .post {
-        margin: 10px 0;
-    }
-
-    .post-image {
-        width: 100%;
-        height: auto;
-    }
-}
+  }
 </style>
+
 <body>
-   <canvas class="rain"></canvas>
+  <canvas class="rain"></canvas>
   <header>
+        <div class="container header-content">
+      <div class="subscribe-toggle" onclick="toggleMenu()">Подписка</div>
+      <div class="subscribe-menu" id="subscribeMenu">
+        <a href="" target="_blank">Telegram</a>
+        <a href="" target="_blank">YouTube</a>
+        <a href="" target="_blank">ВК</a>
+      </div>
     <div class="container header-content">
       <div class="search-bar">
         <img alt="Академия" class="logo" src="шсщт.jpg">
-        <input id="search" type="search" placeholder="&#x1F50D; Enter the search text..." list="search-suggestions" autocomplete="off" />
+        <input id="search" type="search" placeholder="&#x1F50D; Enter the search text..." list="search-suggestions"
+          autocomplete="off" />
         <datalist id="search-suggestions">
           <option value="Регистрация"></option>
           <option value="Расписание уроков"></option>
@@ -59,18 +62,19 @@
           <option value=" Любовь"></option> -->
           <option value=" Катенок"></option>
           <option value="HTML "></option>
-          <option value=" Програмист"></option>
+          <option value="Програмист"></option>
           <option value=" GnomosloG "></option>
           <option value="Расписание"></option>
           <option value=" симпапуська"></option>
         </datalist>
       </div>
     </div>
+<button class="register-button">Регистрация</button>
   </header>
   <main class="container">
     <div class="profile__posts">
       <div class="search-display"></div>
-      <div class="card-header">
+      <div class="posts-container">
         <div class="card-header__title">Приветствую</div>
       </div>
       <div class="posts-container">
@@ -103,7 +107,7 @@
           <div class="post-content">
             <p class="post-title">Оформление текстa</p>
             <div class="post-tags">
-<span class="post-tag">CSS и HTML</span><span class="post-tag">Оформление текстa</span>
+              <span class="post-tag">CSS и HTML</span><span class="post-tag">Оформление текстa</span>
             </div>
           </div>
         </div>
@@ -163,7 +167,8 @@
           </div>
         </div>
         <div class="post">
-          <a class="post-preview" href="https://dzen.ru/video/watch/63fd25f442bde33eeb63571a?share_to=link" target="_blank">
+          <a class="post-preview" href="https://dzen.ru/video/watch/63fd25f442bde33eeb63571a?share_to=link"
+            target="_blank">
             <img class="post-image" src="рыц.png" alt="Ты рыцаря">
           </a>
           <div class="post-content">
@@ -175,22 +180,23 @@
         </div>
         <div align="center">
           <div class="post">
-          <a class="post-preview" href="https://t.me/Gnomoslog" target="_blank">
-            <img class="post-image" src="Nazzu.jpg" alt="Я">
-          </a>
-          <div class="post-content">
-            <p class="post-title">Я</p>
-            <div class="post-tags">
-              <span class="post-tag">Програмист</span><span class="post-tag">GnomosloG</span>
+            <a class="post-preview" href="https://t.me/Gnomoslog" target="_blank">
+              <img class="post-image" src="Nazzu.jpg" alt="Я">
+            </a>
+            <div class="post-content">
+              <p class="post-title">Я</p>
+              <div class="post-tags">
+                <span class="post-tag">Програмист</span><span class="post-tag">GnomosloG</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     </div>
-    </div>
   </main>
   <script src="poi.js"></script>
   <script src="search.js" defer></script>
 </body>
+
 </html>
