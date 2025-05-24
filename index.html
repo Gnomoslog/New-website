@@ -6,47 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="poi.css">
-  <!-- <link rel="stylesheet" href="static/styils/redactor.css"> -->
   <link rel="icon" href="favi(2).ico" type="image/x-icon">
   <link rel="stylesheet" href="mas.css">
-  <script src="rain.js" defer></script>
-  <!-- <script src="fga.js" defer></script> -->
-   <script src="js.js" defer></script>
-   <link rel="stylesheet" href="sab.css">
+  <script src="js.js" defer></script>
+  <link rel="stylesheet" href="sab.css">
+  <script src="sa.js" defer></script>
+  <link rel="stylesheet" href="sa2.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-<style>
-  /* Мобильные стили */
-  @media screen and (max-width: 768px) {
-    .container {
-      padding: 10px;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .header-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-</style>
 
 <body>
   <header>
-          <canvas class="rain"></canvas>
-        <div class="container header-content">
+      <div class="toggle-container">
+      <input type="range" id="weatherToggle" min="0" max="1" step="1" value="0">
+      <div class="circle" id="circle"></div>
+    </div>
+    <canvas class="rain" id="canvas"></canvas>
+  </div>
+  
+    <div class="container header-content">
+      <div class="search-bar">
+
+               <div class="container header-content">
       <div class="subscribe-toggle" onclick="toggleMenu()">Подписка</div>
       <div class="subscribe-menu" id="subscribeMenu">
         <a href="" target="_blank">Telegram</a>
         <a href="" target="_blank">YouTube</a>
         <a href="" target="_blank">ВК</a>
       </div>
-    <div class="container header-content">
-      <div class="search-bar">
+
         <img alt="Академия" class="logo" src="шсщт.jpg">
-        <input id="search" type="search" placeholder="&#x1F50D; Enter the search text..." list="search-suggestions"
+        <input id="search"  type="search" placeholder="Enter the search text..." list="search-suggestions"
           autocomplete="off" />
+
+            <a href="regest.html"><button class="register-button">Регистрация   </button></a>
+
         <datalist id="search-suggestions">
-          <option value="Регистрация"></option>
+          <!-- <option value="Регистрация"></option> -->
           <option value="Расписание уроков"></option>
           <option value="Использование Gif"></option>
           <option value="Оформление текстa"></option>
@@ -69,7 +65,7 @@
         </datalist>
       </div>
     </div>
-<button class="register-button">Регистрация</button>
+  <!-- <a href="regest.html"><button class="register-button">Регистрация   </button></a>  -->
   </header>
   <main class="container">
     <div class="profile__posts">
@@ -78,7 +74,7 @@
         <div class="card-header__title">Приветствую</div>
       </div>
       <div class="posts-container">
-        <div class="post">
+        <!-- <div class="post">
           <a class="post-preview" href="regest.html" target="_blank">
             <img class="post-image22" src="wh (1) (1).jpeg" alt="Регистрация">
           </a>
@@ -88,7 +84,7 @@
               <span class="post-tag">Регистрация</span><span class="post-tag">Оформление</span>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="post">
           <a class="post-preview" href="dom.html" target="_blank">
             <img class="post-image223" src="cover.jpg" alt="Расписание уроков">
@@ -102,7 +98,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="dzzzzz.html" target="_blank">
-            <img class="post-image223" src="slide-15.jpg" alt="Оформление текстa">
+            <img class="post-image223" src="Оформление.jpg" alt="Оформление текстa">
           </a>
           <div class="post-content">
             <p class="post-title">Оформление текстa</p>
@@ -113,7 +109,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="dz.11.html" target="_blank">
-            <img class="post-image224" src="i.webp" alt="Использование Gif">
+            <img class="post-image224" src="Использование Gif.jpg" alt="Использование Gif">
           </a>
           <div class="post-content">
             <p class="post-title">Использование Gif в HTML-документах</p>
@@ -135,10 +131,10 @@
         </div>
         <div class="post">
           <a class="post-preview" href="perdsq1.html" target="_blank">
-            <img class="post-image224" src="c.png" alt="Гиперсылки">
+            <img class="post-image224" src="gip.png" alt="Гиперсылки">
           </a>
           <div class="post-content">
-            <p class="post-title">Задание с Гиперсылками</p>
+            <p class="post-title">Гиперсылки</p>
             <div class="post-tags">
               <span class="post-tag">CSS и HTML</span><span class="post-tag">Гиперсылки</span>
             </div>
@@ -146,7 +142,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="forma.html" target="_blank">
-            <img class="post-image" src="htmllogo.png" alt="Форматы">
+            <img class="post-image" src="htmllogo.png" alt="Формат">
           </a>
           <div class="post-content">
             <p class="post-title">Форматы</p>
@@ -157,7 +153,7 @@
         </div>
         <div class="post">
           <a class="post-preview" href="layers.html" target="_blank">
-            <img class="post-image224" src="i (1).webp" alt="💸Слаи💸">
+            <img class="post-image224" src="cлаи.png" alt="💸Слаи💸">
           </a>
           <div class="post-content">
             <p class="post-title">💸Слаи💸</p>
@@ -178,7 +174,7 @@
             </div>
           </div>
         </div>
-        <div align="center">
+        <!-- <div align="center"> -->
           <div class="post">
             <a class="post-preview" href="https://t.me/Gnomoslog" target="_blank">
               <img class="post-image" src="Nazzu.jpg" alt="Я">
@@ -195,7 +191,5 @@
     </div>
     </div>
   </main>
-  <script src="poi.js"></script>
-  <script src="search.js" defer></script>
 </body>
 </html>
