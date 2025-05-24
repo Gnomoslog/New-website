@@ -1,0 +1,77 @@
+body {
+  font: normal 16px/26px system-ui, Roboto, Arial, sans-serif;
+  background: #282828;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  overflow-x: hidden;
+
+}
+/* Стили для контейнера переключателя погоды */
+.toggle-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+} 
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 130px;
+    height: 10px;
+    background: #ddd;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #c44b4b url('ama.jpg') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* .circle{
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 140%;
+    background: #ffffff url('дождь.jpg') no-repeat center; 
+    background-size: contain;
+    position: absolute;
+    top: 65px;
+    left: 98px;     /* мля чтука для перемещения */
+    /* transition: background 0.3s;
+    background-size: contain;
+    cursor: pointer;
+}  */
+
+canvas.rain { 
+    /* фатически беспол */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Мобильные стили */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
