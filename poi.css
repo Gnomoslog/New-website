@@ -29,9 +29,9 @@ header {
 
 .logo {
   position: relative;
-  top: 8px;
+  top: 1px;
   height: 30px;
-  left: -19px;
+  left: -6px;
 }
 
 a {
@@ -202,3 +202,4 @@ a {
   border-color: #0085b6;
   color: #fff;
 }
+
