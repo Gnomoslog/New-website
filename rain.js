@@ -20,7 +20,7 @@ function RainDrops(x, y, endy, velocity, opacity) {
         c.moveTo(this.x, this.y);
         c.lineTo(this.x, this.y - this.endy);
         c.lineWidth = 1;
-        c.strokeStyle= "rgba(255, 255, 255, " + this.opacity + ")";
+        c.strokeStyle = "rgba(255, 255, 255, " + this.opacity + ")";
         c.stroke();
     }
 
@@ -37,14 +37,20 @@ function RainDrops(x, y, endy, velocity, opacity) {
 
 let rainArray = [];
 
-for (let i = 0; i < 140; i++) {
-    let rainXLocation = Math.floor(Math.random() * window.innerWidth) + 1;
-    let rainYLocation = Math.random() * -500;
-    let randomRainHeight = randomNum(10, 2);
-    let randomSpeed = randomNum(20, 0.2);
-    let randomOpacity = Math.random() * 0.55;
-    rainArray.push(new RainDrops(rainXLocation, rainYLocation, randomRainHeight, randomSpeed, randomOpacity));
+function createRainDrops() {
+    rainArray = []; 
+    for (let i = 0; i < 140; i++) {
+        let rainXLocation = Math.floor(Math.random() * window.innerWidth) + 1;
+        let rainYLocation = Math.random() * -500;
+        let randomRainHeight = randomNum(10, 2);
+        let randomSpeed = randomNum(20, 0.2);
+        let randomOpacity = Math.random() * 0.55;
+        rainArray.push(new RainDrops(rainXLocation, rainYLocation, randomRainHeight, randomSpeed, randomOpacity));
+    }
 }
+
+
+createRainDrops();
 
 function animateRain() {
     requestAnimationFrame(animateRain);
@@ -54,4 +60,12 @@ function animateRain() {
     }
 }
 
+
 animateRain();
+
+//  изменения  окна
+window.addEventListener('resize', function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    createRainDrops(); // Перезапускаем капли с новыми координатами кто читает лох :) 
+});
