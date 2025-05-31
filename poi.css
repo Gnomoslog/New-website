@@ -35,7 +35,7 @@ header {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 24px 24px 0px;
   width: 100%;
@@ -196,8 +196,3 @@ header {
   border-color: #0085b6;
   color: #fff;
 }
-
-.container221 {
-      order: 4;
-      margin-left: 15px;
-    }
