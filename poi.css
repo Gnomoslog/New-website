@@ -34,12 +34,6 @@ header {
   left: -6px;
 }
 
-a {
-  color: #0085b6;
-  text-decoration: none;
-  border: none;
-}
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -203,3 +197,7 @@ a {
   color: #fff;
 }
 
+.container221 {
+      order: 4;
+      margin-left: 15px;
+    }
