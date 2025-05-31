@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
-    <script src="regg.js"></script>
-    <link rel="stylesheet" href="regg.css">
-    <link rel="stylesheet" href="static/styils/redactor.css">
-    <link rel="icon" href="11.css" >
+    <title>Login</title>
+    <!-- <script src="snow.js" defer></script>  кто читает лох-->
+    <link rel="stylesheet" href="main.css">
+    <!-- <script src="app.js" defer></script> -->
+    <script src="rain.js" defer></script>
+    <link rel="stylesheet" href="regest.css">
+     <script src="sa.js" defer></script>
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     
 </head>
 <body>
-    <div class="wrapper">
-        <form class="login">
-          <p class="title">Авторизоваться</p>
-          <input type="text" placeholder="Имя пользователя" autofocus/>
-          <i class="fa fa-user"></i>
-          <input type="password" placeholder="Пороль" />
-          <i class="fa fa-key"></i>
-          <a href="#" style="color: rgb(0, 0, 0);">забыл свой пароль?</a>
-          <button>
-            <span class="state">сохранить</span>
-          </button>
+            <canvas class="rain"></canvas>
+    <!-- <section class="layers">
+    <div class="layers__container"> -->
+        <!-- движение  -->
+    <div class="wods">
+        <form action="">
+            <h1>login  <i class='bx  bx-dizzy'  ></i></h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required> <!-- (запрос на обязательный логин) -->
+            <i class='bx bx-user-circle'></i> 
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required> <!-- (запрос на обязательный логин) -->
+            <i class='bx  bx-key' ></i> 
+            </div>
+            <div class="remember">
+                <label for=""> <input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+           <button type="submit" class="bts">Login</button>
+
+            <div class="register-linc">
+                <p>Dont`t have an account? <a href="#">Register</a></p>
+            </div>
+            
         </form>
-        </p>
-      </div>
-      <header class="footer">
-        <h1 align="center"> <font SIZE="4" ><a href="index.html" class="RGB0">↓  Переход к библиотеке ссылок домашней академии всегда снизу, не бойтесь на нее нажимать ↓</a> </font> </h1>
-        <nav class="navigation">
-            <ul>
-                <li align="center"><a href="index.html"><b class="RGB01"> <FONT SIZE="5">Домашняя Академия</FONT> </b></a></a></li>
-            </ul>
-        </nav>
-        </header>
-      
-    
+            <!-- <canvas class="rain"></canvas> --> 
+    </div>
+
+
 </body>
 </html>
