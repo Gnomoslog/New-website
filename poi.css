@@ -27,12 +27,31 @@ header {
   z-index: 2;
 }
 
-.logo {
-  position: relative;
-  top: 1px;
-  height: 30px;
-  left: -6px;
-}
+    .logo-container {
+      position: relative;
+      top: 1px;
+      height: 30px;
+      left: -6px;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-block;
+       border-radius: 17px;
+    }
+    .logo-container.clicked {
+      transform: rotate(360deg);
+    }
+    .logo-container img {
+      height: 100%;
+      width: auto;
+      display: block;
+       border-radius: 17px;
+    }
+    .logo-container svg {
+      height: 100%;
+      width: auto;
+       border-radius: 17px;
+      display: block;
+    }
 
 .container {
   max-width: 1140px;
