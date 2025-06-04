@@ -25,7 +25,7 @@
   border-radius: 2px;
 }
 
-.loading-overlay-character {
+/* .loading-overlay-character {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -35,7 +35,7 @@
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 2a2 2 0 1 1 .001 4.001A2 2 0 0 1 12 4zm0 10c-1.67 0-3.14-.85-4-2.15.03-1.32 2.67-2.05 4-2.05s3.97.73 4 2.05c-.86 1.3-2.33 2.15-4 2.15z" fill="%23000"/></svg>');
   background-size: contain;
   transition: left 3s linear;
-}
+} */
 
 .loading-overlay-text {
   margin-top: 20px;
