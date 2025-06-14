@@ -30,3 +30,4 @@ document.getElementById("clearSearch").addEventListener("click", function() {
   });
   this.style.display = 'none';
 });
+
