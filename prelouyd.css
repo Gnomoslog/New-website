@@ -55,25 +55,3 @@ body.loading-active {
   overflow: hidden;
   height: 100vh;
 }
-
-.logo-container {
-      position: relative;
-      top: 1px;
-      height: 30px;
-      left: -6px;
-      cursor: pointer;
-      transition: all 0.3s;
-      display: inline-block;
-    }
-    .logo-container.clicked {
-      transform: rotate(360deg);
-    }
-    .logo-container img {
-      height: 100%;
-      width: auto;
-      display: block;
-    }
-    .logo-container svg {
-      height: 100%;
-      width: auto;
-      display: block;
