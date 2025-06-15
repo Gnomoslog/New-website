@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="mas.css">
   <script src="js.js" defer></script>
   <link rel="stylesheet" href="sab.css">
-  <script src="sa.js" defer></script>
   <link rel="stylesheet" href="sa2.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="class_cnomp.css">
@@ -29,17 +28,27 @@
 
   <link rel="stylesheet" href="top_men.css">
   <script src="top_men.js" defer></script>
+
+  <link rel="stylesheet" href="polzon.css">
+  <script src="polzon.js" defer></script>
 </head>
 
 <body>
+
   <div class="loding-bar"></div>
+
   <header>
-    <div class="toggle-container">
-      <input type="range" id="weatherToggle" min="0" max="1" step="1" value="0">
-      <div class="circle" id="circle"></div>
-    </div>
-    <canvas class="rain" id="canvas"></canvas>
-    </div>
+  <div class="toggle-container">
+    <input type="checkbox" id="weatherToggle" class="toggle-input">
+    <div class="toggle-circle"></div>
+    <div class="toggle-hint toggle-hint-rain"></div>
+    <div class="toggle-hint toggle-hint-sun"></div>
+  </div>
+  
+  <!-- дождик бл -->
+  <div class="weather-status" id="weatherStatus"></div>
+  <canvas class="weather-effect" id="canvas"></canvas>
+
 
     <div class="container header-content">
       <div class="search-bar">
