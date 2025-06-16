@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Волшебные линии по середине
     const magicLines = [];
-    const lineCount = 2;
+    const lineCount = 0;
     
     function createMagicLines() {
         for (let i = 0; i < lineCount; i++) {
