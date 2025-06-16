@@ -31,6 +31,31 @@
 
   <link rel="stylesheet" href="polzon.css">
   <script src="polzon.js" defer></script>
+
+  <style>
+    
+                    .next-btn {
+            background-color: #4a4b49;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        
+        .next-btn:hover {
+            background-color: #2f302f;
+        }
+
+        a {
+    text-decoration: none;
+}
+  </style>
 </head>
 
 <body>
@@ -243,7 +268,8 @@
     <div class="popup-content" id="popup">
       <span class="close-btn" id="closeBtn">&times;</span>
       <h3>Привет!</h3>
-      <p>Напиши свою проблему или выбери популярную.</p>
+      <p>ниже кнопка на Поддержку </p>
+          <a href="под.html"><button class="next-btn" id="nextBtn">Виду на сайт поддеждки</button></a>
     </div>
     <button class="popup-btn" id="popupBtn">
       <i class="fas fa-comment"></i>Поддержка
