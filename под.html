@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угол поддержки LOL</title>
+    <link rel="stylesheet" href="poi.css">
+    <link rel="icon" href="favi(2).ico" type="image/x-icon">
+    <link rel="stylesheet" href="mas.css">
+    <link rel="stylesheet" href="sab.css">
+    <link rel="stylesheet" href="sa2.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="class_cnomp.css">
+
+    <link rel="stylesheet" href="loudbar.css">
+    <link rel="stylesheet" href="prelouyd.css">
+
+    <link rel="stylesheet" href="bon.css">
+    <link rel="stylesheet" href="alal.css">
+    <link rel="stylesheet" href="pop.css">
+
+    <link rel="stylesheet" href="top_men.css">
+    <link rel="stylesheet" href="polzon.css">
+
+    <link rel="stylesheet" href="под.css">
+</head>
+<body>
+
+     <a href="index.html" class="back-button">← Вернуться</a>
+
+    <div class="header">
+        <h1>Угол поддержки LOL</h1>
+        <nav>
+            <ul>
+                <li><a href="#contact">Контакт</a></li>
+                <li><a href="#ticket">написать мне</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="contact" class="support-section">
+            <h2>Контактная информация</h2>
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <img src="ama.jpg" alt="Чат" height="100px" class="contact-ama">
+                    <h3>Онлайн-чат</h3>
+                    <p>Круглосуточная поддержка</p>
+                    <button id="openChat" class="btn">Открыть чат</button>
+                </div>
+                <div class="contact-card">
+                    <img src="gooooofd.jpg" alt="Чат" height="90px" class="contact-ama">
+                    <h3>Email</h3>
+                    <p>krasil@mysite.com</p>
+                    <p>Ответ в течение 25/12 часов</p>
+                    <a href="mailto:krasil@gmail.com" class="btn">Написать</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="support-section">
+            <h2>Частые вопросы</h2>
+            <div class="search-box">
+                <input type="text" id="faqSearch" placeholder="Поиск по вопросам...">
+                <button class="search-btn">Найти</button>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Как восстановить пароль?</div>
+                    <div class="faq-answer">
+                        <p>Перейдите на страницу входа и нажмите "Забыли пароль?". Введите ваш email, и мы отправим инструкции по восстановлению.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Как найти себя?</div>
+                    <div class="faq-answer">
+                        <p>Найти себя — поможет волшебный порошек миф</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Как отменить заказ?</div>
+                    <div class="faq-answer">
+                        <p>Заказы можно отменить в личном кабинете в разделе "Мои заказы" в течение 24 часов после оформления.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ticket" class="support-section">
+            <h2>Написать мне</h2>
+            <form id="supportTicketForm" class="ticket-form">
+                <div class="form-group">
+                    <label for="ticketSubject">Тема</label>
+                    <input type="text" id="ticketSubject" required>
+                </div>
+                <div class="form-group">
+                    <label for="ticketEmail">Ваш Email</label>
+                    <input type="email" id="ticketEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="ticketPriority">Приоритет</label>
+                    <select id="ticketPriority">
+                        <option value="low" selected>Низкий</option>
+                        <option value="medium">Средний</option>
+                        <option value="high">Высокий</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ticketMessage">Описание проблемы</label>
+                    <textarea id="ticketMessage" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Отправить мне</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Чат поддержки -->
+    <div id="supportChat" class="chat-container">
+        <div class="chat-header">
+            <h3>Онлайн-поддержка</h3>
+            <button id="closeChat" class="close-btn">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Сообщения будут добавляться здесь -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Введи вопросик пупсик...">
+            <button id="sendMessage" class="btn">Отправить</button>
+        </div>
+    </div>
+
+    <script>
+      
+    </script>
+
+    <!-- Подключение внешних скриптов -->
+    <script src="js.js" defer></script>
+    <script src="boton__clas..js" defer></script>
+    <script src="prelouyd.js" defer></script>
+    <script src="ada.js" defer></script>
+    <script src="popupBtn.js" defer></script>
+    <script src="top_men.js" defer></script>
+    <script src="polzon.js" defer></script>
+
+    <script src="pomo.js" defer></script>
+</body>
+</html>
