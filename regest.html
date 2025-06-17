@@ -42,11 +42,8 @@
      <a href="index.html" class="back-button">← Вернуться</a>
 
             <canvas class="rain"></canvas>
-    <!-- <section class="layers">
-    <div class="layers__container"> -->
-        <!-- движение  -->
     <div class="wods">
-        <form action="">
+        <form id="registrationForm">
             <h1>login  <i class='bx  bx-dizzy'  ></i></h1>
             <div class="input-box">
                 <input type="text" placeholder="Username" required> <!-- (запрос на обязательный логин) -->
@@ -58,18 +55,40 @@
             </div>
             <div class="remember">
                 <label for=""> <input type="checkbox">Remember me</label>
-                <a href="#">Forgot password?</a>
+                <a href="под.html">Forgot password?</a>
             </div>
 
-           <button type="submit" class="bts">Login</button>
+           <button type="button"  id="saveButton" class="bts">Login</button>
 
             <div class="register-linc">
-                <p>Dont`t have an account? <a href="#">Register</a></p>
+                <p>Dont`t have an account? <a href="Register.html">Register</a></p>
             </div>
-            
         </form>
-    </div>
+    </div> 
 
 
+    <script>
+        document.getElementById('saveButton').addEventListener('click', function() {
+            const form = document.getElementById('registrationForm');
+            const inputs = form.querySelectorAll('input[required]');
+            let allFilled = true;
+
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    allFilled = false;
+                    input.style.border = '1px solid red'; // Подсветка незаполненных полей
+                } else {
+                    input.style.border = ''; // Сброс подсветки
+                }
+            });
+
+            if (allFilled) {
+                window.location.href = 'index.html'; // Переход только если все поля заполнены
+            } 
+            // else {
+            //     alert('Пожалуйста, заполните все обязательные поля!');
+            // }
+        });
+    </script>
 </body>
 </html>
