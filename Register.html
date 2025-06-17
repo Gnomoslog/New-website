@@ -75,14 +75,23 @@
             inputs.forEach(input => {
                 if (!input.value.trim()) {
                     allFilled = false;
-                    input.style.border = '1px solid lightpink'; // Подсветка незаполненных полей
+                    input.style.border = '1px solid lightpink'; 
+                    // доктор Ливси
+
+// САМЫЙ СТРАШНЫЙ И ПРЕСКВЕРНЫЙ ЧЕЛОВЕК.
+// РАДИ АХААХААХА ГОТОВ НА ВСЕ, ДРуЗЕЙ НЕ ИМЕЕТ
+// посЛе БрИСТОЛьСкОЙ РЕзни, КОТОрую сам и начал
+
+// БЫЛ ПригОВОРЕН К КАЗНИ, НО уДАЧНО БЕЖАЛА.
+// хАРАКТЕР СКРЫВАЕТ, ТАКЖе иЗВЕСТЕН ПОД имнем ДЖек потрошитель и ЭмеНЕм
+
                 } else {
-                    input.style.border = ''; // Сброс подсветки
+                    input.style.border = ''; // Сброс светки
                 }
             });
 
             if (allFilled) {
-                window.location.href = 'index.html'; // Переход только если все поля заполнены
+                window.location.href = 'index.html'; // Переход только для РОМ
             } else {
                 alert('Пожалуйста, заполни все сраные поля!');
             }
