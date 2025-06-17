@@ -75,18 +75,20 @@
             inputs.forEach(input => {
                 if (!input.value.trim()) {
                     allFilled = false;
-                    input.style.border = '1px solid lightpink'; 
+                    input.style.border =  '1px solid lightpink';
                 } else {
                     input.style.border = ''; // Сброс светки
                 }
             });
 
             if (allFilled) {
-                window.location.href = 'index.html'; // Переход только для РОМ
+                window.location.href = 'index.html'; 
             } else {
-                alert('Пожалуйста, заполни все сраные поля!');
+                alert ('Пожалуйста, заполни все сраные поля!'); 
             }
         });
     </script>
 </body>
 </html>
+
+
