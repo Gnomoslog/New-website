@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Popins" "sans-serif" ;
+    /* color: lightpink;  жертва чудных моих эксперементов */
 }
 
 body{
@@ -122,6 +123,8 @@ canvas.rain {
     z-index: 0; /* Установим z-index, чтобы canvas был на заднем плане */
 }
 
+
+/* Чтобы дождь не мешал взаимодействию с формой */
 .canvas.rain {
     position: absolute;
     top: 0;
@@ -130,4 +133,4 @@ canvas.rain {
     height: 100%;
     pointer-events: none; 
 }
-/* Чтобы дождь не мешал взаимодействию с формой */
+
